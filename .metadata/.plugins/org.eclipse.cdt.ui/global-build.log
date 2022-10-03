@@ -1,0 +1,1154 @@
+00:41:35 **** Rebuild of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\ParcialLaboratorio.o" 
+Info: Nothing to build for ParcialLaboratorio
+01:24:45 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c:45:5: error: conflicting types for 'Libro_addLibro'
+   45 | int Libro_addLibro(Libro *arrayLibro,int size,int indice, int *id){
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:51:5: note: previous declaration of 'Libro_addLibro' was here
+   51 | int Libro_addLibro(Libro *arrayLibro,int size,int indice);
+      |     ^~~~~~~~~~~~~~
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:51:6: warning: implicit declaration of function 'utn_get_name' [-Wimplicit-function-declaration]
+   51 |   if(utn_get_name(bufferLibro.titulo, MAX_CHARS, "\nIngrese nombre del Libro: ", "\nError! Ingrese un nombre", 2) == 0){
+      |      ^~~~~~~~~~~~
+..\src\Libros.c:54:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   54 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c:60:8: warning: implicit declaration of function 'utn_getNumeroFlotante' [-Wimplicit-function-declaration]
+   60 |    if( utn_getNumeroFlotante(&bufferLibro.precio, "\nIngrese precio: ", "\nError! Ingrese un numero", 10, 10000000, 2)== 0 &&
+      |        ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:61:6: warning: implicit declaration of function 'utn_getNumero' [-Wimplicit-function-declaration]
+   61 |      utn_getNumero(&bufferLibro.fechaPublicacion.dia, "\nIngrese fecha de publicacion(Numerica)\nDia: ", "\nError! Ingrese un numero: ", 1, 31, 2) == 0 &&
+      |      ^~~~~~~~~~~~~
+01:25:09 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:51:6: warning: implicit declaration of function 'utn_get_name' [-Wimplicit-function-declaration]
+   51 |   if(utn_get_name(bufferLibro.titulo, MAX_CHARS, "\nIngrese nombre del Libro: ", "\nError! Ingrese un nombre", 2) == 0){
+      |      ^~~~~~~~~~~~
+..\src\Libros.c:54:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   54 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c:60:8: warning: implicit declaration of function 'utn_getNumeroFlotante' [-Wimplicit-function-declaration]
+   60 |    if( utn_getNumeroFlotante(&bufferLibro.precio, "\nIngrese precio: ", "\nError! Ingrese un numero", 10, 10000000, 2)== 0 &&
+      |        ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:61:6: warning: implicit declaration of function 'utn_getNumero' [-Wimplicit-function-declaration]
+   61 |      utn_getNumero(&bufferLibro.fechaPublicacion.dia, "\nIngrese fecha de publicacion(Numerica)\nDia: ", "\nError! Ingrese un numero: ", 1, 31, 2) == 0 &&
+      |      ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+01:31:30 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:40:11: warning: implicit declaration of function 'Album_addAlbum' [-Wimplicit-function-declaration]
+   40 |        if(Album_addAlbum(libros, MAX_LIBROS, auxiliarIndice)==0){
+      |           ^~~~~~~~~~~~~~
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c:45:59: error: expected declaration specifiers or '...' before ')' token
+   45 | int Libro_addLibro(Libro *arrayLibro,int size,int indice, ){
+      |                                                           ^
+01:31:49 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:51:6: warning: implicit declaration of function 'utn_get_name' [-Wimplicit-function-declaration]
+   51 |   if(utn_get_name(bufferLibro.titulo, MAX_CHARS, "\nIngrese nombre del Libro: ", "\nError! Ingrese un nombre", 2) == 0){
+      |      ^~~~~~~~~~~~
+..\src\Libros.c:54:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   54 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c:60:8: warning: implicit declaration of function 'utn_getNumeroFlotante' [-Wimplicit-function-declaration]
+   60 |    if( utn_getNumeroFlotante(&bufferLibro.precio, "\nIngrese precio: ", "\nError! Ingrese un numero", 10, 10000000, 2)== 0 &&
+      |        ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:61:5: warning: implicit declaration of function 'utn_getNumero' [-Wimplicit-function-declaration]
+   61 |     utn_getNumero(&bufferLibro.fechaPublicacion.dia, "\nIngrese fecha de publicacion(Numerica)\nDia: ", "\nError! Ingrese un numero: ", 1, 31, 2) == 0 &&
+      |     ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:40:11: warning: implicit declaration of function 'Album_addAlbum' [-Wimplicit-function-declaration]
+   40 |        if(Album_addAlbum(libros, MAX_LIBROS, auxiliarIndice)==0){
+      |           ^~~~~~~~~~~~~~
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\ParcialLaboratorio.o: in function `main':
+C:\Users\Facu\eclipse-workspace\parcial-laboratorio\ParcialLaboratorio\Debug/../src/ParcialLaboratorio.c:40: undefined reference to `Album_addAlbum'
+collect2.exe: error: ld returned 1 exit status
+01:32:11 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\ParcialLaboratorio.o: in function `main':
+C:\Users\Facu\eclipse-workspace\parcial-laboratorio\ParcialLaboratorio\Debug/../src/ParcialLaboratorio.c:40: undefined reference to `Album_addAlbum'
+collect2.exe: error: ld returned 1 exit status
+01:32:49 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+01:36:59 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:55:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   55 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+01:59:01 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_imprimirUno':
+..\src\Libros.c:21:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   21 |  printf("Titulo: %s %s\n",arrayLibro.titulo);
+      |                     ~^
+      |                      |
+      |                      char *
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:93:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   93 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+20:53:19 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_imprimirUno':
+..\src\Libros.c:21:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   21 |  printf("Titulo: %s %s\n",arrayLibro.titulo);
+      |                     ~^
+      |                      |
+      |                      char *
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:93:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   93 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+20:54:37 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_imprimirUno':
+..\src\Libros.c:22:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   22 |  printf("Titulo: %s %s\n",arrayLibro.titulo);
+      |                     ~^
+      |                      |
+      |                      char *
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file ParcialLaboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:54:40 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+21:00:11 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_imprimirUno':
+..\src\Libros.c:21:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   21 |  printf("Titulo: %s %s\n",arrayLibro.titulo);
+      |                     ~^
+      |                      |
+      |                      char *
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:93:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   93 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+21:02:41 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+In file included from ..\src\ParcialLaboratorio.c:14:
+..\src\Libros.h:40:9: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+   40 |  int id = 0;
+      |         ^
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+21:03:15 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_imprimirUno':
+..\src\Libros.c:21:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   21 |  printf("Titulo: %s %s\n",arrayLibro.titulo);
+      |                     ~^
+      |                      |
+      |                      char *
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:93:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   93 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+21:04:33 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_imprimirUno':
+..\src\Libros.c:21:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   21 |  printf("Titulo: %s %s\n",arrayLibro.titulo);
+      |                     ~^
+      |                      |
+      |                      char *
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:93:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   93 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+21:07:15 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:93:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   93 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c:106:23: error: incompatible type for argument 1 of 'Libro_imprimirUno'
+  106 |     Libro_imprimirUno(arrayLibro);
+      |                       ^~~~~~~~~~
+      |                       |
+      |                       Libro * {aka struct <anonymous> *}
+..\src\Libros.c:19:30: note: expected 'Libro' {aka 'struct <anonymous>'} but argument is of type 'Libro *' {aka 'struct <anonymous> *'}
+   19 | void Libro_imprimirUno(Libro arrayLibro) {
+      |                        ~~~~~~^~~~~~~~~~
+21:07:36 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:93:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   93 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+21:09:49 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:93:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   93 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+21:10:45 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+21:10:51 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+21:12:28 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+21:13:17 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file ParcialLaboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:13:20 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+21:14:34 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+23:07:29 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:8: warning: unused variable 'autores' [-Wunused-variable]
+   22 |  Autor autores[] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+      |        ^~~~~~~
+..\src\ParcialLaboratorio.c:21:7: warning: unused variable 'paises' [-Wunused-variable]
+   21 |  Pais paises[] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+..\src\ParcialLaboratorio.c:20:12: warning: unused variable 'editoriales' [-Wunused-variable]
+   20 |  Editorial editoriales [] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+      |            ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:119:6: warning: unused variable 'idAux' [-Wunused-variable]
+  119 |  int idAux;
+      |      ^~~~~
+..\src\Libros.c: At top level:
+..\src\Libros.c:189:5: error: conflicting types for 'Libro_buscarLibroPorId'
+  189 | int Libro_buscarLibroPorId(Libro *arrayLibro, int size,int id){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:58:5: note: previous declaration of 'Libro_buscarLibroPorId' was here
+   58 | int Libro_buscarLibroPorId(Libro *arrayLibro, int size);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+23:08:20 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:119:6: warning: unused variable 'idAux' [-Wunused-variable]
+  119 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+23:11:16 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:119:6: warning: unused variable 'idAux' [-Wunused-variable]
+  119 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+23:12:25 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:119:6: warning: unused variable 'idAux' [-Wunused-variable]
+  119 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+00:06:11 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:119:6: warning: unused variable 'idAux' [-Wunused-variable]
+  119 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+11:55:03 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c:106:40: error: subscripted value is neither array nor pointer nor vector
+  106 |       "ID: %d\nNombre:%s", arrayAutores[i]);
+      |                                        ^
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:131:6: warning: unused variable 'idAux' [-Wunused-variable]
+  131 |  int idAux;
+      |      ^~~~~
+11:55:34 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:43:75: error: incompatible type for argument 5 of 'Libro_addLibro'
+   43 |        if(Libro_addLibro(libros, MAX_LIBROS, auxiliarIndice, editoriales, autores, MAX_ENTITIES)==0){
+      |                                                                           ^~~~~~~
+      |                                                                           |
+      |                                                                           Autor * {aka struct <anonymous> *}
+In file included from ..\src\ParcialLaboratorio.c:14:
+..\src\Libros.h:54:94: note: expected 'Autor' {aka 'struct <anonymous>'} but argument is of type 'Autor *' {aka 'struct <anonymous> *'}
+   54 | int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditoriales, Autor arrayAutores, int sizeEntities);
+      |                                                                                        ~~~~~~^~~~~~~~~~~~
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+11:56:34 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c:105:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Autor *' {aka 'struct <anonymous> *'} [-Wformat=]
+  105 |     printf("Seleccione el ID del autor al que pertenece el libro\n"
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  106 |       "ID: %d\nNombre:%s", arrayAutores);
+      |                            ~~~~~~~~~~~~
+      |                            |
+      |                            Autor * {aka struct <anonymous> *}
+..\src\Libros.c:106:13: note: format string is defined here
+  106 |       "ID: %d\nNombre:%s", arrayAutores);
+      |            ~^
+      |             |
+      |             int
+..\src\Libros.c:105:12: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+  105 |     printf("Seleccione el ID del autor al que pertenece el libro\n"
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:106:24: note: format string is defined here
+  106 |       "ID: %d\nNombre:%s", arrayAutores);
+      |                       ~^
+      |                        |
+      |                        char *
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:131:6: warning: unused variable 'idAux' [-Wunused-variable]
+  131 |  int idAux;
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+11:57:19 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c:105:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Autor' {aka 'struct <anonymous>'} [-Wformat=]
+  105 |     printf("Seleccione el ID del autor al que pertenece el libro\n"
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  106 |       "ID: %d\nNombre:%s", arrayAutores[i]);
+      |                            ~~~~~~~~~~~~~~~
+      |                                        |
+      |                                        Autor {aka struct <anonymous>}
+..\src\Libros.c:106:13: note: format string is defined here
+  106 |       "ID: %d\nNombre:%s", arrayAutores[i]);
+      |            ~^
+      |             |
+      |             int
+..\src\Libros.c:105:12: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+  105 |     printf("Seleccione el ID del autor al que pertenece el libro\n"
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:106:24: note: format string is defined here
+  106 |       "ID: %d\nNombre:%s", arrayAutores[i]);
+      |                       ~^
+      |                        |
+      |                        char *
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:131:6: warning: unused variable 'idAux' [-Wunused-variable]
+  131 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+12:05:09 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:131:6: warning: unused variable 'idAux' [-Wunused-variable]
+  131 |  int idAux;
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+12:06:34 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:131:6: warning: unused variable 'idAux' [-Wunused-variable]
+  131 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+12:06:49 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:94:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   94 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:131:6: warning: unused variable 'idAux' [-Wunused-variable]
+  131 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+12:15:23 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:96:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+   96 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:154:6: warning: unused variable 'idAux' [-Wunused-variable]
+  154 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+13:02:42 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Autor_imprimirAutores':
+..\src\Libros.c:26:5: warning: implicit declaration of function 'Autor_imprimirUno'; did you mean 'Libro_imprimirUno'? [-Wimplicit-function-declaration]
+   26 |     Autor_imprimirUno(arrayAutores[i]);
+      |     ^~~~~~~~~~~~~~~~~
+      |     Libro_imprimirUno
+..\src\Libros.c: At top level:
+..\src\Libros.c:35:13: warning: conflicting types for 'Autor_imprimirUno'
+   35 | static void Autor_imprimirUno(Autor arrayAutor);
+      |             ^~~~~~~~~~~~~~~~~
+..\src\Libros.c:35:13: error: static declaration of 'Autor_imprimirUno' follows non-static declaration
+..\src\Libros.c:26:5: note: previous implicit declaration of 'Autor_imprimirUno' was here
+   26 |     Autor_imprimirUno(arrayAutores[i]);
+      |     ^~~~~~~~~~~~~~~~~
+..\src\Libros.c: In function 'Editorial_imprimirEditoriales':
+..\src\Libros.c:52:39: error: incompatible type for argument 1 of 'Autor_imprimirUno'
+   52 |     Autor_imprimirUno(arrayEditoriales[i]);
+      |                       ~~~~~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       Editorial {aka struct <anonymous>}
+..\src\Libros.c:37:37: note: expected 'Autor' {aka 'struct <anonymous>'} but argument is of type 'Editorial' {aka 'struct <anonymous>'}
+   37 | static void Autor_imprimirUno(Autor arrayAutor){
+      |                               ~~~~~~^~~~~~~~~~
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:148:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  148 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:198:15: error: too few arguments to function 'Libro_modificarUnLibro'
+  198 |    auxLibro = Libro_modificarUnLibro(auxLibro);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:59:7: note: declared here
+   59 | Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:190:6: warning: unused variable 'idAux' [-Wunused-variable]
+  190 |  int idAux;
+      |      ^~~~~
+At top level:
+..\src\Libros.c:63:13: warning: 'Editorial_imprimirUna' defined but not used [-Wunused-function]
+   63 | static void Editorial_imprimirUna(Editorial editorial){
+      |             ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:44:12: warning: 'Editorial_imprimirEditoriales' defined but not used [-Wunused-function]
+   44 | static int Editorial_imprimirEditoriales(Editorial *arrayEditoriales, int size){
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+13:04:09 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Autor_imprimirAutores':
+..\src\Libros.c:26:5: warning: implicit declaration of function 'Autor_imprimirUno'; did you mean 'Libro_imprimirUno'? [-Wimplicit-function-declaration]
+   26 |     Autor_imprimirUno(arrayAutores[i]);
+      |     ^~~~~~~~~~~~~~~~~
+      |     Libro_imprimirUno
+..\src\Libros.c: At top level:
+..\src\Libros.c:35:13: warning: conflicting types for 'Autor_imprimirUno'
+   35 | static void Autor_imprimirUno(Autor arrayAutor);
+      |             ^~~~~~~~~~~~~~~~~
+..\src\Libros.c:35:13: error: static declaration of 'Autor_imprimirUno' follows non-static declaration
+..\src\Libros.c:26:5: note: previous implicit declaration of 'Autor_imprimirUno' was here
+   26 |     Autor_imprimirUno(arrayAutores[i]);
+      |     ^~~~~~~~~~~~~~~~~
+..\src\Libros.c: In function 'Editorial_imprimirEditoriales':
+..\src\Libros.c:52:5: warning: implicit declaration of function 'Editorial_imprimirUna'; did you mean 'Autor_imprimirUno'? [-Wimplicit-function-declaration]
+   52 |     Editorial_imprimirUna(arrayEditoriales[i]);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     Autor_imprimirUno
+..\src\Libros.c: At top level:
+..\src\Libros.c:61:13: warning: conflicting types for 'Editorial_imprimirUna'
+   61 | static void Editorial_imprimirUna(Editorial editorial);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:61:13: error: static declaration of 'Editorial_imprimirUna' follows non-static declaration
+..\src\Libros.c:52:5: note: previous implicit declaration of 'Editorial_imprimirUna' was here
+   52 |     Editorial_imprimirUna(arrayEditoriales[i]);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:148:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  148 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:198:15: error: too few arguments to function 'Libro_modificarUnLibro'
+  198 |    auxLibro = Libro_modificarUnLibro(auxLibro);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:59:7: note: declared here
+   59 | Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:190:6: warning: unused variable 'idAux' [-Wunused-variable]
+  190 |  int idAux;
+      |      ^~~~~
+At top level:
+..\src\Libros.c:63:13: warning: 'Editorial_imprimirUna' defined but not used [-Wunused-function]
+   63 | static void Editorial_imprimirUna(Editorial editorial){
+      |             ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:44:12: warning: 'Editorial_imprimirEditoriales' defined but not used [-Wunused-function]
+   44 | static int Editorial_imprimirEditoriales(Editorial *arrayEditoriales, int size){
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:37:13: warning: 'Autor_imprimirUno' defined but not used [-Wunused-function]
+   37 | static void Autor_imprimirUno(Autor arrayAutor){
+      |             ^~~~~~~~~~~~~~~~~
+13:05:03 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Autor_imprimirAutores':
+..\src\Libros.c:25:5: warning: implicit declaration of function 'Autor_imprimirUno'; did you mean 'Libro_imprimirUno'? [-Wimplicit-function-declaration]
+   25 |     Autor_imprimirUno(arrayAutores[i]);
+      |     ^~~~~~~~~~~~~~~~~
+      |     Libro_imprimirUno
+..\src\Libros.c: At top level:
+..\src\Libros.c:34:13: warning: conflicting types for 'Autor_imprimirUno'
+   34 | static void Autor_imprimirUno(Autor arrayAutor);
+      |             ^~~~~~~~~~~~~~~~~
+..\src\Libros.c:34:13: error: static declaration of 'Autor_imprimirUno' follows non-static declaration
+..\src\Libros.c:25:5: note: previous implicit declaration of 'Autor_imprimirUno' was here
+   25 |     Autor_imprimirUno(arrayAutores[i]);
+      |     ^~~~~~~~~~~~~~~~~
+..\src\Libros.c: In function 'Editorial_imprimirEditoriales':
+..\src\Libros.c:49:5: warning: implicit declaration of function 'Editorial_imprimirUna'; did you mean 'Autor_imprimirUno'? [-Wimplicit-function-declaration]
+   49 |     Editorial_imprimirUna(arrayEditoriales[i]);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     Autor_imprimirUno
+..\src\Libros.c: At top level:
+..\src\Libros.c:58:13: warning: conflicting types for 'Editorial_imprimirUna'
+   58 | static void Editorial_imprimirUna(Editorial editorial);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:58:13: error: static declaration of 'Editorial_imprimirUna' follows non-static declaration
+..\src\Libros.c:49:5: note: previous implicit declaration of 'Editorial_imprimirUna' was here
+   49 |     Editorial_imprimirUna(arrayEditoriales[i]);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:145:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  145 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:195:15: error: too few arguments to function 'Libro_modificarUnLibro'
+  195 |    auxLibro = Libro_modificarUnLibro(auxLibro);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:59:7: note: declared here
+   59 | Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:187:6: warning: unused variable 'idAux' [-Wunused-variable]
+  187 |  int idAux;
+      |      ^~~~~
+At top level:
+..\src\Libros.c:60:13: warning: 'Editorial_imprimirUna' defined but not used [-Wunused-function]
+   60 | static void Editorial_imprimirUna(Editorial editorial){
+      |             ^~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:41:12: warning: 'Editorial_imprimirEditoriales' defined but not used [-Wunused-function]
+   41 | static int Editorial_imprimirEditoriales(Editorial *arrayEditoriales, int size){
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:35:13: warning: 'Autor_imprimirUno' defined but not used [-Wunused-function]
+   35 | static void Autor_imprimirUno(Autor arrayAutor){
+      |             ^~~~~~~~~~~~~~~~~
+13:06:36 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:144:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  144 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:194:15: error: too few arguments to function 'Libro_modificarUnLibro'
+  194 |    auxLibro = Libro_modificarUnLibro(auxLibro);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:59:7: note: declared here
+   59 | Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Libros.c:186:6: warning: unused variable 'idAux' [-Wunused-variable]
+  186 |  int idAux;
+      |      ^~~~~
+At top level:
+..\src\Libros.c:46:12: warning: 'Editorial_imprimirEditoriales' defined but not used [-Wunused-function]
+   46 | static int Editorial_imprimirEditoriales(Editorial *arrayEditoriales, int size){
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+13:08:54 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:144:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  144 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:186:6: warning: unused variable 'idAux' [-Wunused-variable]
+  186 |  int idAux;
+      |      ^~~~~
+At top level:
+..\src\Libros.c:46:12: warning: 'Editorial_imprimirEditoriales' defined but not used [-Wunused-function]
+   46 | static int Editorial_imprimirEditoriales(Editorial *arrayEditoriales, int size){
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+14:23:13 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:144:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  144 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:186:6: warning: unused variable 'idAux' [-Wunused-variable]
+  186 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+15:22:35 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:144:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  144 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:186:6: warning: unused variable 'idAux' [-Wunused-variable]
+  186 |  int idAux;
+      |      ^~~~~
+..\src\Libros.c: In function 'Libro_listarLibrosCompletos':
+..\src\Libros.c:297:221: error: expected ';' before '}' token
+  297 |     printf("\n%s\t%s\t%.2f\t%d/%d/%d", arrayLibros[i].titulo, arrayAutores[j].nombre, arrayLibros[i].precio, arrayLibros[i].fechaPublicacion.dia, arrayLibros[i].fechaPublicacion.mes, arrayLibros[i].fechaPublicacion.anio)
+      |                                                                                                                                                                                                                             ^
+      |                                                                                                                                                                                                                             ;
+  298 |    }
+      |    ~                                                                                                                                                                                                                         
+15:22:50 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:144:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  144 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:186:6: warning: unused variable 'idAux' [-Wunused-variable]
+  186 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+15:59:28 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:144:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  144 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:186:6: warning: unused variable 'idAux' [-Wunused-variable]
+  186 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+16:11:16 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:146:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  146 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:188:6: warning: unused variable 'idAux' [-Wunused-variable]
+  188 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+16:14:47 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:148:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  148 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:190:6: warning: unused variable 'idAux' [-Wunused-variable]
+  190 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+16:16:57 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:149:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  149 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:191:6: warning: unused variable 'idAux' [-Wunused-variable]
+  191 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+16:15:09 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:149:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  149 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:191:6: warning: unused variable 'idAux' [-Wunused-variable]
+  191 |  int idAux;
+      |      ^~~~~
+..\src\Libros.c: In function 'Libro_listarLibrosCompletos':
+..\src\Libros.c:297:11: warning: unused variable 'k' [-Wunused-variable]
+  297 |  int i, j,k;
+      |           ^
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+17:04:05 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:81:8: warning: implicit declaration of function 'prinf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   81 |        prinf("\nEliminacion cancelada");
+      |        ^~~~~
+      |        printf
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:165:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  165 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_bajaLibro':
+..\src\Libros.c:211:11: warning: implicit declaration of function 'eGen_BuscarPorID' [-Wimplicit-function-declaration]
+  211 |    while (eGen_BuscarPorID(arrayLibro, size, idBaja) == -1) {
+      |           ^~~~~~~~~~~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:237:6: warning: unused variable 'idAux' [-Wunused-variable]
+  237 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Libros.o: in function `Libro_bajaLibro':
+C:\Users\Facu\eclipse-workspace\parcial-laboratorio\ParcialLaboratorio\Debug/../src/Libros.c:211: undefined reference to `eGen_BuscarPorID'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\ParcialLaboratorio.o: in function `main':
+C:\Users\Facu\eclipse-workspace\parcial-laboratorio\ParcialLaboratorio\Debug/../src/ParcialLaboratorio.c:81: undefined reference to `prinf'
+collect2.exe: error: ld returned 1 exit status
+17:04:32 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:165:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  165 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:237:6: warning: unused variable 'idAux' [-Wunused-variable]
+  237 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\ParcialLaboratorio.o: in function `main':
+C:\Users\Facu\eclipse-workspace\parcial-laboratorio\ParcialLaboratorio\Debug/../src/ParcialLaboratorio.c:81: undefined reference to `prinf'
+collect2.exe: error: ld returned 1 exit status
+17:04:47 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+17:09:06 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+17:38:10 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:169:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  169 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:241:6: warning: unused variable 'idAux' [-Wunused-variable]
+  241 |  int idAux;
+      |      ^~~~~
+..\src\Libros.c: In function 'Libro_informarPuntoA':
+..\src\Libros.c:382:8: warning: unused variable 'resultado' [-Wunused-variable]
+  382 |  float resultado, promedio;
+      |        ^~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+17:39:09 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:169:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  169 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:241:6: warning: unused variable 'idAux' [-Wunused-variable]
+  241 |  int idAux;
+      |      ^~~~~
+..\src\Libros.c: In function 'Libro_informarPuntoA':
+..\src\Libros.c:382:8: warning: unused variable 'resultado' [-Wunused-variable]
+  382 |  float resultado, promedio;
+      |        ^~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+17:39:32 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:169:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  169 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:241:6: warning: unused variable 'idAux' [-Wunused-variable]
+  241 |  int idAux;
+      |      ^~~~~
+..\src\Libros.c: In function 'Libro_informarPuntoA':
+..\src\Libros.c:382:8: warning: unused variable 'resultado' [-Wunused-variable]
+  382 |  float resultado, promedio;
+      |        ^~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+17:40:35 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:168:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  168 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:240:6: warning: unused variable 'idAux' [-Wunused-variable]
+  240 |  int idAux;
+      |      ^~~~~
+..\src\Libros.c: In function 'Libro_informarPuntoA':
+..\src\Libros.c:381:8: warning: unused variable 'resultado' [-Wunused-variable]
+  381 |  float resultado, promedio;
+      |        ^~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+17:58:43 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:197:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  197 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:283:6: warning: unused variable 'idAux' [-Wunused-variable]
+  283 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+17:56:46 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:197:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  197 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:283:6: warning: unused variable 'idAux' [-Wunused-variable]
+  283 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+18:01:16 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+18:23:07 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:22:7: warning: unused variable 'paises' [-Wunused-variable]
+   22 |  Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+      |       ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:197:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  197 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:283:6: warning: unused variable 'idAux' [-Wunused-variable]
+  283 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio

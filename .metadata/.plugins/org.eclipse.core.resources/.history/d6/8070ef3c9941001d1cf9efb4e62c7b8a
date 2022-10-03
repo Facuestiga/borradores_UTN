@@ -1,0 +1,62 @@
+/*
+ * Libros.h
+ *
+ *  Created on: 30 sep. 2022
+ *      Author: Facu
+ */
+
+#ifndef LIBROS_H_
+#define LIBROS_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MAX_CHARS 200
+#define LIBRE 0
+#define OCUPADO 1
+
+typedef struct{
+	int dia;
+	int mes;
+	int anio;
+}Fecha;
+
+typedef struct{
+	int id;
+	char descripcion[MAX_CHARS];
+}Pais;
+
+typedef struct{
+	int id;
+	char descripcion[MAX_CHARS];
+}Editorial;
+
+typedef struct{
+	int id;
+	char nombre[MAX_CHARS];
+	int idPais;
+}Autor;
+
+typedef struct{
+	int id;
+	char titulo[MAX_CHARS];
+	Fecha fechaPublicacion;
+	float precio;
+	int idAutor;
+	int idEditorial;
+	int status;
+}Libro;
+int Libro_ObtenerIdUnico(void);
+void Libro_imprimirUno(Libro arrayLibro);
+int Libro_imprimirTodos(Libro arrayLibro[], int size);
+
+int Libro_initArrayLibro(Libro *arrayLibro,int size);
+int Libro_buscarLugarLibre(Libro *arrayLibro,int size);
+int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditoriales, Autor arrayAutores, int sizeEntities);
+int Libro_bajaLibro(Libro *arrayLibro, int size, int indice);
+int Libro_modificar(Libro *arrayLibro,int size);
+Libro Libro_modificarUnLibro(Libro libro);
+int Libro_buscarLibroPorId(Libro *arrayLibro, int size);
+
+/***Menu***/
+void imprimirMenu();
+#endif /* LIBROS_H_ */

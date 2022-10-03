@@ -1,0 +1,49 @@
+/*
+ * Libros.h
+ *
+ *  Created on: 30 sep. 2022
+ *      Author: Facu
+ */
+
+#ifndef LIBROS_H_
+#define LIBROS_H_
+#define MAX_CHARS 200
+
+typedef struct{
+	int dia;
+	int mes;
+	int anio;
+}Fecha;
+
+typedef struct{
+	int id;
+	char descripcion[MAX_CHARS];
+}Pais;
+
+typedef struct{
+	int id;
+	char descripcion[MAX_CHARS];
+}Editorial;
+
+typedef struct{
+	int id;
+	char nombre[MAX_CHARS];
+	int idPais;
+}Autor;
+
+typedef struct{
+	int id;
+	char titulo[MAX_CHARS];
+	Fecha fechaPublicacion;
+	float precio;
+	int idAutor;
+	int idEditorial;
+}Libro;
+
+int Libro_initArrayLibro(Libro *arrayLibro,int size);
+int Libro_buscarLugarLibre(Libro *arrayLibro,int size);
+int Libro_addLibro(Libro *arrayLibro,int size,int indice);
+int Libro_bajaLibro(Libro *arrayLibro, int size, int indice);
+int Libro_modificarLibro(Libro *arrayLibro,int size,int indice);
+int Libro_buscarLibroPorId(Libro *arrayLibro, int size,int id);
+#endif /* LIBROS_H_ */

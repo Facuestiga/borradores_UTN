@@ -1,0 +1,17 @@
+/*
+ * utn.h
+ *
+ *  Created on: 30 sep. 2022
+ *      Author: Facu
+ */
+
+#ifndef UTN_H_
+#define UTN_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int utn_get_name(char* pResultado,int size,char* mensaje,char* mensajeError,int reintentos);
+int utn_Val_isValidName(char* nombre);
+int get_myGets(char* pResultado, int len);
+
+#endif /* UTN_H_ */

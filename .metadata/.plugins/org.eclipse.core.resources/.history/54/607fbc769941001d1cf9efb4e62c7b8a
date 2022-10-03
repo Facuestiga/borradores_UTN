@@ -1,0 +1,97 @@
+/*
+ ============================================================================
+ Name        : ParcialLaboratorio.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+#include "Libros.h"
+#define MAX_LIBROS 100
+#define MAX_ENTITIES 5
+
+int main(void) {
+
+	setbuf(stdout,NULL);
+	Editorial editoriales [MAX_ENTITIES] = { {1, "Editorial 1"}, {2, "Editorial 2"}, {3, "Editorial 3"}, {4, "Editorial 4"}, {5, "Editorial 5"} };
+	Pais paises[MAX_ENTITIES] =  { {1, "Argentina"}, {2, "Espania"}, {3, "Inglaterra"}, {4, "Colombia"}, {5, "Italia"} };
+	Autor autores[MAX_ENTITIES] = { {1, "Sofia", 1}, {2, "Facundo", 5}, {3, "Rolando", 2}, {4, "Matias", 1}, {5, "Jose", 5} };
+	Libro libros[MAX_LIBROS];
+
+	int opcion;
+	int contadorLibro = 0;
+	int auxiliarIndice;
+	int flagCase1 = 0;
+
+	if(Libro_initArrayLibro(libros, MAX_LIBROS) == 0){
+		printf("Se ha inicializado el array de libros.\n");
+		do{
+			imprimirMenu();
+			if(utn_getNumero(&opcion, "Ingrese opcion: \n", "\nERROR! Ingrese opcion: \n", 1, 6, 2) == 0){
+
+				switch(opcion){
+				//ALTA
+				case 1:
+					if(contadorLibro < MAX_LIBROS){
+						auxiliarIndice = Libro_buscarLugarLibre(libros, MAX_LIBROS);
+						if(auxiliarIndice >= 0){
+							if(Libro_addLibro(libros, MAX_LIBROS, auxiliarIndice, editoriales, autores, MAX_ENTITIES)==0){
+								printf("\nCarga realizada con exito\n");
+								contadorLibro++;
+								flagCase1 = 1;
+							}
+							else{
+								printf("\nERROR al realizar la carga\n");
+							}
+						}
+					}else{
+						printf("\nNo hay mas espacio\n");
+					}
+					break;
+				//MODIFICACION
+				case 2:
+
+					if(flagCase1 != 0){
+
+						if(Libro_modificar(libros, MAX_LIBROS) == 0){
+							printf("\nModificacion exitosa\n");
+						}
+						else{
+							printf("\nError durante la modificacion.\n");
+						}
+
+
+					} else {
+						printf("\nDebe ingresar al menos un libro para poder Modificar.\n");
+					}
+
+					break;
+
+				//BAJA
+				case 3:
+
+					break;
+				case 4:
+					break;
+				case 5:
+					break;
+				case 6:
+					printf("\nSaliendo del programa...");
+					system("pause");
+					break;
+				}
+
+
+			}
+		}while(opcion != 6);
+	}else{
+		printf("El array de libros no pudo Inicializarse");
+	}
+
+	return 0;
+}

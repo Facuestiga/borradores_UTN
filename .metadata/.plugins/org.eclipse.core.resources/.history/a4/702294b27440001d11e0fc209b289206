@@ -1,0 +1,80 @@
+/*
+ * utn.c
+ *
+ *  Created on: 30 sep. 2022
+ *      Author: Facu
+ */
+
+
+#include "utn.h"
+
+/**
+ * @brief funcion para obtener un nombre, solo con caracteres
+ * @param pResultado puntero a donde se va a guardar la cadena obtenida
+ * @param len la longitud maxima de la cadena
+ * @param mensaje lo que se va  amostrar por pantalla para que vea el usuario
+ * @param mensajeError para mostrar que tuvo un error
+ * @param reintentos cantidad maxima de reintentos por errores
+ * @return Retorna 0 Exito, (-1) Error!
+ */
+int utn_get_name(char* pResultado,int size,char* mensaje,char* mensajeError,int reintentos){
+	int rtn = -2;
+	char buffer[size];
+	if(pResultado != NULL && size > 0 && mensaje != NULL && mensajeError != NULL && reintentos >= 0)
+	{
+		rtn = -1;
+		while(reintentos >= 0)
+		{
+			printf("%s",mensaje);
+			if(get_myGets(buffer, size) && utn_Val_isValidName(buffer) )
+			{
+				strncpy(pResultado,buffer, size);
+				rtn = 0;
+				break;
+			}
+			printf("%s",mensajeError);
+			reintentos--;
+		}
+	}
+	return rtn;
+}
+
+/**
+ * @brief Valida que lo que hay dentro de la cadena es un nombre valido
+ * @param nombre: array que contiene el nombre
+ * @return devuelve -1 si no se obtuvo, y 0 si esta todo ok
+ */
+int utn_Val_isValidName(char* nombre){
+	int i=0;
+	int rtn = -1;
+	if(nombre != NULL)
+	{
+
+		while(nombre[i] != 0) // busco el final
+		{
+			if(!((nombre[i]>='a' && nombre[i]<='z') || (nombre[i]>='A' && nombre[i]<='Z') || nombre[i]==' '))
+			{
+				rtn = 0;
+				break;
+			}
+			i++;
+		}
+	}
+	return rtn;
+}
+
+int get_myGets(char* pResultado, int len)
+{
+	int returnFunction = -1;
+	fflush(stdin);
+	if(pResultado != NULL && len > 0 && fgets(pResultado,len,stdin)==pResultado)
+	{
+		fflush(stdin);
+		if(pResultado[strlen(pResultado)-1]== '\n')
+		{
+			pResultado[strlen(pResultado)-1]='\0';
+		}
+		returnFunction = 1;
+	}
+	return returnFunction;
+}
