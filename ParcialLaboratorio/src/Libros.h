@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define MAX_CHARS 200
+#define MAX_CHARS 51
 #define LIBRE 0
 #define OCUPADO 1
 
@@ -23,6 +23,7 @@ typedef struct{
 typedef struct{
 	int id;
 	char descripcion[MAX_CHARS];
+	int status;
 }Pais;
 
 typedef struct{
@@ -43,20 +44,28 @@ typedef struct{
 	char titulo[MAX_CHARS];
 	Fecha fechaPublicacion;
 	float precio;
+	int idGenero;
 	int idAutor;
 	int idEditorial;
 	int status;
 }Libro;
+
+typedef struct{
+	int id;
+	char descripcion[MAX_CHARS];
+	int status;
+}Genero;
+
 int Libro_ObtenerIdUnico(void);
 void Libro_imprimirUno(Libro arrayLibro);
 int Libro_imprimirTodos(Libro arrayLibro[], int size);
 
 int Libro_initArrayLibro(Libro *arrayLibro,int size);
 int Libro_buscarLugarLibre(Libro *arrayLibro,int size);
-int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities);
+int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros ,int sizeEntities);
 int Libro_bajaLibro(Libro *arrayLibro, int size);
-int Libro_modificar(Libro *arrayLibro,int size, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities);
-Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities);
+int Libro_modificar(Libro *arrayLibro,int size, Editorial *arrayEditoriales, Autor *arrayAutores,Genero *arrayGeneros ,int sizeEntities);
+Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros, int sizeEntities);
 int Libro_buscarLibroPorId(Libro *arrayLibro, int size);
 int Libro_buscarPorIdParametro(Libro *arrayLibro, int size, int id);
 
@@ -66,12 +75,22 @@ void Autor_imprimirUno(Autor arrayAutor);
 int Autor_imprimirAutores(Autor *arrayAutores, int size);
 void Editorial_imprimirUna(Editorial editorial);
 int Editorial_imprimirEditoriales(Editorial *arrayEditoriales, int size);
-int Libro_listarLibrosCompletos(Libro *arrayLibros, int size, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities);
+void Pais_imprimirUno(Pais pais);
+int Pais_imprimirPaises(Pais *arrayPaises, int size);
+int Libro_listarLibrosCompletos(Libro *arrayLibros, int size, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros,int sizeEntities);
+int Libro_listarLibroQueNoSeanNovelas(Libro *arrayLibros, int size);
+void Genero_imprimirUno(Genero genero);
+int Genero_imprimirGeneros(Genero *arrayGenero, int size);
+int Libro_listarLibrosArgentinosDeEditorialDeterminada(Libro *arrayLibros, int size, Autor *arrayAutores, int sizeEntities);
 
 /***Menu***/
 void imprimirMenu();
 
 /***Informar***/
 int Libro_informarPuntoA(Libro *arrayLibro, int size);
+int Libro_contarMayoresQueElPromedio(Libro *arrayLibro, int size, float promedio);
 int Libro_informarPuntoB(Libro *arrayLibro, int size);
+
+/***Ordenar***/
+int Libro_ordenarImporteYTitulo(Libro *arrayLibro, int size);
 #endif /* LIBROS_H_ */

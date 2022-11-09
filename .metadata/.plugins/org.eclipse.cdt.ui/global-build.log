@@ -1152,3 +1152,315 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c"
       |      ^~~~~
 gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
 Info: Nothing to build for ParcialLaboratorio
+17:22:16 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Pais_imprimirPaises':
+..\src\Libros.c:32:34: error: incompatible type for argument 1 of 'Autor_imprimirUno'
+   32 |     Autor_imprimirUno(arrayPaises[i]);
+      |                       ~~~~~~~~~~~^~~
+      |                                  |
+      |                                  Pais {aka struct <anonymous>}
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:66:30: note: expected 'Autor' {aka 'struct <anonymous>'} but argument is of type 'Pais' {aka 'struct <anonymous>'}
+   66 | void Autor_imprimirUno(Autor arrayAutor);
+      |                        ~~~~~~^~~~~~~~~~
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:305:6: warning: unused variable 'idAux' [-Wunused-variable]
+  305 |  int idAux;
+      |      ^~~~~
+17:22:38 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:305:6: warning: unused variable 'idAux' [-Wunused-variable]
+  305 |  int idAux;
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:66:15: warning: unknown escape sequence: '\M'
+   66 |        printf("\Modificacion cancelada.\n");
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+18:00:02 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:305:6: warning: unused variable 'idAux' [-Wunused-variable]
+  305 |  int idAux;
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:66:15: warning: unknown escape sequence: '\M'
+   66 |        printf("\Modificacion cancelada.\n");
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+18:04:29 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:305:6: warning: unused variable 'idAux' [-Wunused-variable]
+  305 |  int idAux;
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:66:15: warning: unknown escape sequence: '\M'
+   66 |        printf("\Modificacion cancelada.\n");
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+18:05:48 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+..\src\ParcialLaboratorio.c: In function 'main':
+..\src\ParcialLaboratorio.c:66:15: warning: unknown escape sequence: '\M'
+   66 |        printf("\Modificacion cancelada.\n");
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+18:06:01 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+19:01:04 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:305:6: warning: unused variable 'idAux' [-Wunused-variable]
+  305 |  int idAux;
+      |      ^~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+19:02:55 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+19:18:17 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+19:20:12 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+00:35:38 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+00:54:15 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+00:55:00 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+11:44:30 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:4: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    toupper(bufferLibro.titulo[0]);
+      |    ^~~~~~~
+..\src\Libros.c:219:4: warning: statement with no effect [-Wunused-value]
+  219 |    toupper(bufferLibro.titulo[0]);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+11:44:45 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+12:02:54 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+12:14:16 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:219:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  219 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+14:21:48 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:240:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  240 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+14:34:13 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:241:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  241 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+14:36:33 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:241:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  241 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+14:39:19 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:242:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  242 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+14:43:31 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:242:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  242 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_modificar':
+..\src\Libros.c:341:80: warning: passing argument 4 of 'Libro_modificarUnLibro' makes pointer from integer without a cast [-Wint-conversion]
+  341 |    auxLibro = Libro_modificarUnLibro(auxLibro, arrayEditoriales, arrayAutores, sizeEntities);
+      |                                                                                ^~~~~~~~~~~~
+      |                                                                                |
+      |                                                                                int
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:68:101: note: expected 'Genero *' {aka 'struct <anonymous> *'} but argument is of type 'int'
+   68 | Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros, int sizeEntities);
+      |                                                                                             ~~~~~~~~^~~~~~~~~~~~
+..\src\Libros.c:341:15: error: too few arguments to function 'Libro_modificarUnLibro'
+  341 |    auxLibro = Libro_modificarUnLibro(auxLibro, arrayEditoriales, arrayAutores, sizeEntities);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Libros.c:8:
+..\src\Libros.h:68:7: note: declared here
+   68 | Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros, int sizeEntities);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+14:44:08 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:242:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  242 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+14:54:49 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:242:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  242 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+..\src\Libros.c: In function 'Libro_listarLibroQueNoSeanNovelas':
+..\src\Libros.c:614:24: error: incompatible type for argument 1 of 'Libro_imprimirUno'
+  614 |      Libro_imprimirUno(arrayLibros);
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        Libro * {aka struct <anonymous> *}
+..\src\Libros.c:114:30: note: expected 'Libro' {aka 'struct <anonymous>'} but argument is of type 'Libro *' {aka 'struct <anonymous> *'}
+  114 | void Libro_imprimirUno(Libro arrayLibro) {
+      |                        ~~~~~~^~~~~~~~~~
+14:55:19 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:242:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  242 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+Info: Nothing to build for ParcialLaboratorio
+15:18:51 **** Incremental Build of configuration Debug for project ParcialLaboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Libros.o" "..\\src\\Libros.c" 
+..\src\Libros.c: In function 'Libro_addLibro':
+..\src\Libros.c:242:28: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  242 |    bufferLibro.titulo[0] = toupper(bufferLibro.titulo[0]);
+      |                            ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ParcialLaboratorio.o" "..\\src\\ParcialLaboratorio.c" 
+gcc -o ParcialLaboratorio.exe "src\\Libros.o" "src\\ParcialLaboratorio.o" "src\\utn.o" 
+Info: Nothing to build for ParcialLaboratorio

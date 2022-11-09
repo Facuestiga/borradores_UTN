@@ -1105,3 +1105,587 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.core.resources.IResou
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-10-04 17:14:30.898 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-10-04 17:16:02.595
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Facu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:14.258
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:16.827
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.0/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:18.427
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:19.843
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:27.937
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:28.903
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:30.027
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.08-0.10, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:30.438
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:31.527
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-0700, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:31.928
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-1923, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:32.510
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.1.v20170413-1523, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:32.934
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.2.v20170504-1955, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:33.334
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:34.485
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.0.v20171212-2122/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:34.891
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.1.v20180118-1753/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:35.313
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:36.275
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13/0.13.0.v20191027-1934/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:36.774
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:37.607
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:38.479
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20170413-1543, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:38.935
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20180118-1753/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:40.464
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.14.v20191027-1935/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:40.920
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.15.v20191028-2018/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:30:41.362
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.16.v20191028-2041/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:01.412
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:01.773
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-0700, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:02.011
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-1923, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:02.284
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.1.v20170413-1523, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:02.534
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.2.v20170504-1955, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:06.006
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:06.299
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.08-0.10, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:06.546
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:06.818
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.0.v20171212-2122/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:07.075
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.1.v20180118-1753/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:07.341
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:07.578
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13/0.13.0.v20191027-1934/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:08.685
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:09.018
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:09.284
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:09.552
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20170413-1543, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:09.780
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20180118-1753/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:10.041
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.14.v20191027-1935/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:10.267
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.15.v20191028-2018/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-04 17:31:10.473
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.16.v20191028-2041/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+!SESSION 2022-10-05 00:21:18.767 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-10-05 00:22:27.995
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Facu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:11.223
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:13.824
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.0/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:15.199
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:16.587
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:24.382
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:25.461
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:29.404
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.08-0.10, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:29.940
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:30.726
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-0700, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:31.240
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-1923, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:31.862
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.1.v20170413-1523, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:32.433
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.2.v20170504-1955, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:32.826
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:33.648
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.0.v20171212-2122/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:34.368
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.1.v20180118-1753/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:34.857
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:35.657
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13/0.13.0.v20191027-1934/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:36.161
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:37.019
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:37.999
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20170413-1543, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:38.487
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20180118-1753/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:39.069
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.14.v20191027-1935/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:39.471
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.15.v20191028-2018/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:39.904
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.16.v20191028-2041/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:57.398
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:58.207
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-0700, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:58.603
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-1923, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:59.059
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.1.v20170413-1523, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:07:59.451
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.2.v20170504-1955, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:03.193
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:04.015
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.08-0.10, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:04.442
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:05.422
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.0.v20171212-2122/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:05.935
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.1.v20180118-1753/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:06.584
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:07.516
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13/0.13.0.v20191027-1934/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:08.798
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:09.605
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:10.417
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:11.177
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20170413-1543, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:11.623
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20180118-1753/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:12.133
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.14.v20191027-1935/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:12.584
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.15.v20191028-2018/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 01:08:13.022
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.16.v20191028-2041/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+!SESSION 2022-10-05 11:37:18.674 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-10-05 11:37:53.286
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Facu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:23.174
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:26.022
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.0/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:27.416
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:28.810
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:35.960
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:36.799
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:37.627
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.08-0.10, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:38.024
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:38.892
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-0700, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:39.315
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-1923, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:39.886
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.1.v20170413-1523, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:40.309
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.2.v20170504-1955, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:40.708
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:41.516
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.0.v20171212-2122/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:41.919
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.1.v20180118-1753/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:42.352
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:43.119
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13/0.13.0.v20191027-1934/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:43.554
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:44.395
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:45.315
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20170413-1543, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:45.751
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20180118-1753/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:46.261
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.14.v20191027-1935/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:46.747
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.15.v20191028-2018/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:23:47.258
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.16.v20191028-2041/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:05.813
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:06.628
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-0700, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:07.049
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-1923, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:07.498
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.1.v20170413-1523, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:07.894
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.2.v20170504-1955, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:11.532
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:12.346
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.08-0.10, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:12.795
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:13.578
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.0.v20171212-2122/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:13.977
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.1.v20180118-1753/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:14.423
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:15.173
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13/0.13.0.v20191027-1934/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:16.474
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:17.309
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:18.119
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:18.932
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20170413-1543, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:19.384
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20180118-1753/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:19.806
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.14.v20191027-1935/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:20.270
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.15.v20191028-2018/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 12:24:20.792
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.16.v20191028-2041/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+!SESSION 2022-10-05 14:01:55.647 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-10-05 14:02:38.531
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Facu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:14.413
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:16.996
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.0/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:18.387
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:19.720
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/tools/cdt/releases/10.6/cdt-10.6.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:26.249
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:27.065
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:27.861
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.08-0.10, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:28.252
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:29.052
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-0700, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:29.437
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-1923, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:29.816
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.1.v20170413-1523, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:30.240
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.2.v20170504-1955, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:30.616
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:31.388
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.0.v20171212-2122/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:31.753
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.1.v20180118-1753/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:32.147
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:32.931
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13/0.13.0.v20191027-1934/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:33.315
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:34.092
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:34.899
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20170413-1543, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:35.278
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20180118-1753/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:35.659
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.14.v20191027-1935/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:36.087
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.15.v20191028-2018/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:36.456
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.16.v20191028-2041/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:53.270
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:54.181
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-0700, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:54.611
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.0.v20170226-1923, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:55.079
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.1.v20170413-1523, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:55.451
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.11/0.11.2.v20170504-1955, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:58.944
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:17:59.732
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.08-0.10, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:00.103
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:00.877
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.0.v20171212-2122/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:01.241
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.12/0.12.1.v20180118-1753/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:01.809
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:02.539
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/release/0.13/0.13.0.v20191027-1934/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:03.785
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:04.608
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:05.391
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:06.151
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20170413-1543, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:06.578
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.13.v20180118-1753/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:06.958
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.14.v20191027-1935/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:07.335
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.15.v20191028-2018/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-10-05 14:18:07.766
+!MESSAGE Using unsafe http transport to retrieve http://anb0s.github.io/eclox/doxygen/1.8/1.8.16.v20191028-2041/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.

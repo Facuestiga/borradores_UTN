@@ -16,6 +16,49 @@ int Libro_ObtenerIdUnico(void) {
 	return idAutomatico++;
 }
 
+void Pais_imprimirUno(Pais pais){
+	printf("ID: %d\n",pais.id);
+	printf("Pais: %s\n",pais.descripcion);
+}
+
+int Pais_imprimirPaises(Pais *arrayPaises, int size){
+	int rtn = -1;
+	int i;
+
+	if (size > 0) {
+		//ESTA TODO BIEN
+		for (i = 0; i < size; i++) {
+			if (arrayPaises[i].status == OCUPADO) { //Si 'estado' == OCUPADO
+				Pais_imprimirUno(arrayPaises[i]);
+				rtn = 0; //Ok
+			}
+		}
+	}
+
+	return rtn;
+}
+
+void Genero_imprimirUno(Genero genero){
+	printf("ID: %d\n",genero.id);
+	printf("Descripcion: %s\n",genero.descripcion);
+}
+
+int Genero_imprimirGeneros(Genero *arrayGeneros, int size){
+	int rtn = -1;
+	int i;
+
+	if (size > 0) {
+		for (i = 0; i < size; i++) {
+			if (arrayGeneros[i].status == OCUPADO) { //Si 'estado' == OCUPADO
+				Genero_imprimirUno(arrayGeneros[i]);
+				rtn = 0; //Ok
+			}
+		}
+	}
+
+	return rtn;
+}
+
 void Autor_imprimirUno(Autor arrayAutor){
 	printf("ID: %d\n",arrayAutor.id);
 	printf("Nombre: %s\n",arrayAutor.nombre);
@@ -71,6 +114,7 @@ int Editorial_imprimirEditoriales(Editorial *arrayEditoriales, int size){
 void Libro_imprimirUno(Libro arrayLibro) {
 	printf("---------------------------");
 	printf("\nID: %d\n",arrayLibro.id);
+	printf("\nID_GENERO: %d\n", arrayLibro.idGenero);
 	printf("ID_AUTOR: %d\n",arrayLibro.idAutor);
 	printf("ID_EDITORIAL: %d\n", arrayLibro.idEditorial);
 	printf("Titulo: %s\n",arrayLibro.titulo);
@@ -183,10 +227,11 @@ int Libro_buscarPorIdParametro(Libro *arrayLibro, int size, int id){
  * @param sizeEntities
  * @return retorna 0 en caso de exito, o -1 en caso de error
  */
-int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities){
+int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros ,int sizeEntities){
 	int retorno = -1;
 	int idAutor;
 	int idEditorial;
+	int idGenero;
 	int i;
 	Libro bufferLibro;
 
@@ -201,9 +246,12 @@ int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditor
 				}
 			}
 
-			//IMPRIMIR ARRAY AUTORES, EDITORIALES Y PAISES
+			printf("\nSeleccione el ID del genero al que pertenece el libro\n");
+			for(i = 0; i < sizeEntities; i++){
+				printf("\nID: %d\nDescripcion:%s", arrayGeneros[i].id, arrayGeneros[i].descripcion);
+			}
+			if(utn_getNumero(&idGenero, "\nIngrese ID del genero del libro ", "\nError! Ingrese un numero \n", 1, 5, 2) == 0){
 
-			//imprimir array autores
 			printf("\nSeleccione el ID del autor al que pertenece el libro\n");
 			for(i = 0; i<sizeEntities; i++){
 				printf("\nID: %d\nNombre:%s", arrayAutores[i].id, arrayAutores[i].nombre);
@@ -213,12 +261,14 @@ int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditor
 				for(i = 0; i<sizeEntities; i++){
 					printf("\nID: %d\nDescripcion:%s", arrayEditoriales[i].id, arrayEditoriales[i].descripcion);
 				}
+
 				if(utn_getNumero(&idEditorial, "\n\nIngrese el ID de la editorial ", "\nError. Ingrese un numero.\n", 1, 5, 2) == 0 &&
 				   utn_getNumeroFlotante(&bufferLibro.precio, "\nIngrese precio: ", "\nError! Ingrese un numero", 10, 10000000, 2)== 0 &&
 				   utn_getNumero(&bufferLibro.fechaPublicacion.dia, "\nIngrese fecha de publicacion(Numerica)\nDia: ", "\nError! Ingrese un numero: ", 1, 31, 2) == 0 &&
 				   utn_getNumero(&bufferLibro.fechaPublicacion.mes, "\nMes: ", "\nError! Ingrese un numero: ", 1, 12, 2) == 0 &&
 				   utn_getNumero(&bufferLibro.fechaPublicacion.anio, "Anio: ", "\nError! Ingrese un numero: ", 1800, 2022, 2) == 0 ){
 				   bufferLibro.id = Libro_ObtenerIdUnico();
+				   bufferLibro.idGenero = idGenero;
 				   bufferLibro.idAutor = idAutor;
 				   bufferLibro.idEditorial = idEditorial;
 				   bufferLibro.status = 1;
@@ -227,6 +277,7 @@ int Libro_addLibro(Libro *arrayLibro,int size,int indice, Editorial *arrayEditor
 				   retorno = 0;
 				}
 			}
+		}
 		}
 	}
 	return retorno;
@@ -277,10 +328,9 @@ int Libro_bajaLibro(Libro *arrayLibro, int size){
  * @param sizeEntities
  * @return
  */
-int Libro_modificar(Libro *arrayLibro,int size, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities){
+int Libro_modificar(Libro *arrayLibro,int size, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros, int sizeEntities){
 
 	int retorno = -1;
-	int idAux;
 	int index;
 	Libro auxLibro;
 
@@ -288,7 +338,7 @@ int Libro_modificar(Libro *arrayLibro,int size, Editorial *arrayEditoriales, Aut
 		if(index > -1 && size > 0){
 			auxLibro = arrayLibro[index];
 
-			auxLibro = Libro_modificarUnLibro(auxLibro, arrayEditoriales, arrayAutores, sizeEntities);
+			auxLibro = Libro_modificarUnLibro(auxLibro, arrayEditoriales, arrayAutores, arrayGeneros,sizeEntities);
 
 			arrayLibro[index] = auxLibro;
 			retorno = 0;
@@ -305,7 +355,7 @@ int Libro_modificar(Libro *arrayLibro,int size, Editorial *arrayEditoriales, Aut
  * @param sizeEntities
  * @return retorna el Libro
  */
-Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities){
+Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros, int sizeEntities){
 	int opcion;
 		if(utn_getNumero(&opcion, "\nIngrese la opcion de lo que desea modificar\n"
 								"1.Titulo\n"
@@ -313,14 +363,14 @@ Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *ar
 								"3.Fecha de publicacion\n"
 								"4.Autor\n"
 								"5.Editorial\n"
-								"7.Todos los datos\n"
+								"6.Genero\n"
 								"\n0.CANCELAR Modificacion\n", "Opcion no habilitada", 0, 6, 2) == 0){
 
 
 
 		switch (opcion) {
 		case 0:
-			printf("Modificacion Cancelada\n");
+			printf("\nModificacion Cancelada\n");
 			break;
 		case 1:
 			utn_getDescripcion(libro.titulo, MAX_CHARS, "\nIngrese titulo del libro", "error\n", 2);
@@ -345,15 +395,9 @@ Libro Libro_modificarUnLibro(Libro libro, Editorial *arrayEditoriales, Autor *ar
 			}
 			break;
 		case 6:
-			utn_getDescripcion(libro.titulo, MAX_CHARS, "\nIngrese el titulo", "error\n", 2);
-			utn_getNumeroFlotante(&libro.precio, "Ingrese precio: ", "\nError! Ingrese un precio: ", 10, 1000000, 2);
-			utn_getNumero(&libro.fechaPublicacion.dia, "\nIngrese dia", "\nError\n", 1, 31, 2);
-			utn_getNumero(&libro.fechaPublicacion.mes, "\nIngrese mes", "\nError\n", 1, 31, 2);
-			utn_getNumero(&libro.fechaPublicacion.anio, "\nIngrese anio", "\nError\n", 1, 31, 2);
-
-			break;
-		default:
-			printf("Opcion ingresada invalida!\n\n");
+			if(Genero_imprimirGeneros(arrayGeneros, sizeEntities) == 0){
+				utn_getNumero(&libro.idGenero, "\nIngrese el ID del genero\n", "\nError! Ingrese un numero \n", 1, 5, 2);
+			}
 			break;
 		}
 		}else{
@@ -397,18 +441,36 @@ int Libro_buscarLibroPorId(Libro *arrayLibro, int size){
 	return rtn;
 }
 
-
-int Libro_listarLibrosCompletos(Libro *arrayLibros, int size, Editorial *arrayEditoriales, Autor *arrayAutores, int sizeEntities){
+/***
+ * Funcion para listar libro con sus respectivos datos
+ * @param arrayLibros
+ * @param size
+ * @param arrayEditoriales
+ * @param arrayAutores
+ * @param sizeEntities
+ * @return retorna 0 en caso Exito, o -1 en caso de error
+ */
+int Libro_listarLibrosCompletos(Libro *arrayLibros, int size, Editorial *arrayEditoriales, Autor *arrayAutores, Genero *arrayGeneros, int sizeEntities){
 	int retorno = -1;
-	int i, j;
-	printf("\nTITULO\t\t\tAUTOR\t\t\tEDITORIAL\t\t\tPRECIO\t\t\tFECHA DE PUBLICACION");
+	int i, j, k, x;
+	printf("\nTITULO\t\t\tAUTOR\t\t\tEDITORIAL\t\t\tGENERO\t\t\tPRECIO\t\t\tFECHA DE PUBLICACION");
 	for(i = 0; i<size; i++){
-		for(j = 0; j < sizeEntities; j++){
 
-			if((arrayLibros[i].idAutor == arrayAutores[j].id) && (arrayLibros[i].idEditorial == arrayEditoriales[j].id)){
-				printf("\n%s\t\t"
-						"%s\t\t\t%s\t\t%.2f\t\t%d/%d/%d", arrayLibros[i].titulo, arrayAutores[j].nombre, arrayEditoriales[j].descripcion,arrayLibros[i].precio, arrayLibros[i].fechaPublicacion.dia, arrayLibros[i].fechaPublicacion.mes, arrayLibros[i].fechaPublicacion.anio);
+		if(arrayLibros[i].status == OCUPADO){
+			for(j = 0; j < sizeEntities; j++){
+				if(arrayLibros[i].idAutor == arrayAutores[i].id){
+					for(k = 0; k < sizeEntities; k++){
+						if(arrayLibros[i].idEditorial == arrayEditoriales[i].id){
+							for(x = 0; x<sizeEntities; x++){
+								if(arrayLibros[i].idGenero == arrayGeneros[i].id){
+									printf("\n%s\t\t"
+										   "%s\t\t\t%s\t\t%s\t\t\t%.2f\t\t%d/%d/%d", arrayLibros[i].titulo, arrayAutores[j].nombre, arrayEditoriales[j].descripcion,arrayGeneros[i].descripcion,arrayLibros[i].precio, arrayLibros[i].fechaPublicacion.dia, arrayLibros[i].fechaPublicacion.mes, arrayLibros[i].fechaPublicacion.anio);
+								}
+							}
+						}
+					}
 			}
+		}
 		}
 	}
 
@@ -441,7 +503,7 @@ int Libro_informarPuntoA(Libro *arrayLibro, int size){
 	int retorno = -1;
 	int i;
 	int contadorLibro = 0;
-	int contadorMayorQuePromedio = 0;
+	//int contadorMayorQuePromedio = 0;
 	float acumuladorPrecio = 0;
 	float promedio;
 
@@ -454,13 +516,11 @@ int Libro_informarPuntoA(Libro *arrayLibro, int size){
 		}
 		if(contadorLibro > 0 && acumuladorPrecio > 0){
 			promedio = acumuladorPrecio/contadorLibro;
-			if(arrayLibro[i].precio > promedio){
-				contadorMayorQuePromedio++;
-			}
+
 			printf("\n.El total de los importes es: %.2f"
 				   "\n.El promedio de los importes es: %.2f"
-				   "\n.La cantidad de libros que su precio supera el promedio de importes es: %d", acumuladorPrecio, promedio, contadorMayorQuePromedio);
-
+				   , acumuladorPrecio, promedio);
+			Libro_contarMayoresQueElPromedio(arrayLibro, size, promedio);
 			retorno = 0;
 		}else{
 			printf("\nNo se pudo calcular el promedio.\n");
@@ -471,6 +531,24 @@ int Libro_informarPuntoA(Libro *arrayLibro, int size){
 	return retorno;
 }
 
+
+int Libro_contarMayoresQueElPromedio(Libro *arrayLibro, int size, float promedio){
+	int retorno = -1;
+	int i;
+	int contadorLibro = 0;
+
+	if(size > 0 && promedio > 0){
+		for(i = 0; i<size; i++){
+			if(arrayLibro[i].status == OCUPADO && (arrayLibro[i].precio > promedio)){
+				contadorLibro++;
+				retorno = 0;
+				printf("\n.La cantidad de libros que su precio supera el promedio de importes es: %d",contadorLibro);
+			}
+		}
+	}
+
+	return retorno;
+}
 /**
  * Funcion que informe la cantidad de libro cuya fecha de publicacion es anterior al 1/1/2000
  * @param arrayLibro
@@ -492,6 +570,81 @@ int Libro_informarPuntoB(Libro *arrayLibro, int size){
 			printf("\n.La cantidad de libros cuya fecha de publicacion es anterior al 1/1/2000 son: %d\n", contadorLibro);
 		}else{
 			printf("\n.Ningun libro ha sido publicado antes del 1/1/2000");
+		}
+	}
+
+	return retorno;
+}
+
+
+/**
+ * Funcion para ordenar el array por importe y por titulo
+ */
+int Libro_ordenarImporteYTitulo(Confederacion *arrayC, int size, Jugador *arryJ, int sizeJ){
+	int retorno = -1;
+	int auxSize = size;
+	int flagSwap;
+	int i;
+	int auxiliarCmp;
+	Confederacoin buffer;
+	if(size > 0){
+		do{
+
+			flagSwap = 0;
+
+			for(i = 0; i < size-1; i++){
+
+				auxiliarCmp = strncmp(arrayLibro[i].titulo, arrayLibro[i + 1].titulo, MAX_CHARS);
+
+				if(auxiliarCmp > 0 ||
+				   (auxiliarCmp == 0 && arrayLibro[i].precio > arrayLibro[i + 1].precio)){
+					  flagSwap = 1;
+					  buffer = arrayLibro[i];
+					  arrayLibro[i] = arrayLibro[i + 1];
+					  arrayLibro[i + 1] = buffer;
+
+				   }
+			}
+			size--;
+		}while(flagSwap);
+		Libro_imprimirTodos(arrayLibro, auxSize);
+	}
+
+	return retorno;
+}
+
+/**
+ * Funcion que lista los libros cuyo genero no es Novela
+ * @param arrayLibros
+ * @param size
+ * @return
+ */
+int Libro_listarLibroQueNoSeanNovelas(Libro *arrayLibros, int size){
+	int retorno = -1;
+	int i;
+
+	if(size > 0){
+		for(i = 0; i<size; i++){
+			if(arrayLibros[i].status == OCUPADO){
+				if(arrayLibros[i].idGenero != 5){
+					Libro_imprimirUno(arrayLibros[i]);
+				}
+			}
+		}
+	}
+
+	return retorno;
+}
+
+int Libro_listarLibrosArgentinosDeEditorialDeterminada(Libro *arrayLibros, int size, Autor *arrayAutores, int sizeEntities){
+	int retorno = -1;
+	int i;
+
+	if(size > 0 && sizeEntities > 0){
+		for(i = 0; i<size; i++){
+			if(arrayLibros[i].status == OCUPADO){
+
+			}
 		}
 	}
 
